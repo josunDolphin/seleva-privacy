@@ -93,7 +93,8 @@
     <li><strong>사진은 기기 밖으로 나가지 않습니다.</strong> 모든 분석은 기기 안에서 이루어집니다.</li>
     <li><strong>이 앱에는 네트워크 권한이 없습니다.</strong> 어떤 데이터도 외부로 전송할 수 없습니다.</li>
     <li>계정, 로그인, 회원가입이 없습니다.</li>
-    <li>광고가 없습니다.</li>
+    <li><strong>현재 버전에는 광고가 없습니다.</strong> 향후 도입 예정이며, 그때 무엇이 달라지는지
+        <a href="#ads-ko">아래</a>에 미리 안내합니다.</li>
   </ul>
 
   <h3>사진 처리 방식</h3>
@@ -116,9 +117,28 @@
   <p>앱이 사용하는 얼굴 인식 라이브러리는 원래 통신 기능을 함께 포함하지만, 이 앱은 빌드 시점에
      그 기능을 제거했습니다.</p>
 
+  <h3 id="ads-ko">광고 (향후 도입 예정)</h3>
+  <p>현재 버전에는 광고가 없고 네트워크 권한도 없습니다. 앞으로 광고를 도입할 예정이며, 그때
+     무엇이 달라지는지 이 절에서 미리 안내합니다. <strong>이 방침은 그 시점에 갱신됩니다.</strong></p>
+  <p>앱에 인터넷 권한(<code>INTERNET</code>)과 광고 식별자 권한(<code>AD_ID</code>)이 추가되며,
+     광고 사업자(Google AdMob)에 다음 정보가 전달될 수 있습니다.</p>
+  <ul>
+    <li>광고 식별자 — 기기마다 부여되며, 기기 설정에서 언제든 초기화할 수 있습니다</li>
+    <li>기기 종류, 운영체제 버전, 언어, IP 주소로 추정한 대략적인 지역 등 기술 정보</li>
+    <li>어떤 광고가 표시되고 어떤 광고를 눌렀는지에 대한 기록</li>
+  </ul>
+  <p>맞춤 광고는 광고 사업자가 그 식별자를 기준으로, 여러 앱에서 모은 데이터로 자체 운영합니다.
+     <strong>이 앱이 브라우저 검색 기록이나 다른 앱의 사용 기록을 읽는 것이 아닙니다.</strong>
+     Android는 한 앱이 다른 앱의 데이터를 보는 것을 허용하지 않습니다.</p>
+  <p><strong>사진과 사진의 분석 결과는 어떤 경우에도 광고 사업자에게 전달되지 않습니다.</strong></p>
+  <p>유럽 경제 지역(EEA)과 영국에서는 앱 최초 실행 시 동의 화면이 표시되며, 선택은 나중에 앱
+     설정에서 변경할 수 있습니다. 광고 식별자 초기화와 맞춤 광고 거부는
+     <strong>기기 설정 → 개인정보 보호 → 광고</strong>에서 언제든 가능합니다(경로는 기기마다 다를 수 있습니다).</p>
+
   <h3>수집하지 않는 정보</h3>
-  <p>이름, 이메일, 전화번호, 주소록, 통화 기록, 위치, 광고 식별자, 사진의 내용 —
-     <strong>이 앱은 위 정보를 수집하지 않습니다.</strong> 수집할 수단 자체가 없습니다.</p>
+  <p>이름, 이메일, 전화번호, 주소록, 통화 기록, 위치, 사진의 내용 —
+     <strong>이 앱은 위 정보를 수집하지 않습니다.</strong> 수집할 수단 자체가 없습니다.
+     현재 버전에서는 광고 식별자도 마찬가지입니다.</p>
 
   <h3>사진 삭제</h3>
   <p>이 앱은 사진을 직접 삭제하지 않습니다. 사용자가 정리하기로 선택한 사진은
@@ -163,7 +183,8 @@
     <li><strong>Your photos never leave your device.</strong> All analysis happens on-device.</li>
     <li><strong>The app holds no network permission.</strong> It cannot transmit any data anywhere.</li>
     <li>There is no account, sign-in, or registration.</li>
-    <li>There are no advertisements.</li>
+    <li><strong>This version has no advertisements.</strong> Ads are planned for a future version;
+        what changes then is described <a href="#ads-en">below</a>.</li>
   </ul>
 
   <h3>How photos are handled</h3>
@@ -186,9 +207,32 @@
   <p>The face detection library the app uses normally bundles a telemetry transport; this app
      removes that component at build time.</p>
 
+  <h3 id="ads-en">Advertising (planned for a future version)</h3>
+  <p>This version shows no ads and holds no network permission. A future version will show ads, and
+     this section describes in advance what changes then. <strong>This policy will be updated at
+     that time.</strong></p>
+  <p>The app will request the internet permission (<code>INTERNET</code>) and the advertising ID
+     permission (<code>AD_ID</code>), and the following may be passed to the advertising provider
+     (Google AdMob):</p>
+  <ul>
+    <li>Your advertising ID — a per-device identifier you can reset at any time in your device settings</li>
+    <li>Technical information such as device model, operating system version, language, and approximate region derived from your IP address</li>
+    <li>Records of which ads were shown and which were tapped</li>
+  </ul>
+  <p>Personalised ads are built by the advertising provider from that identifier, using data it
+     gathers across many apps. <strong>This app does not read your browsing history, your searches,
+     or your activity in other apps</strong> — Android does not permit one app to see another's data.</p>
+  <p><strong>Your photos and their analysis results are never passed to an advertising provider,
+     under any circumstances.</strong></p>
+  <p>In the European Economic Area and the United Kingdom, a consent screen will appear when the app
+     first runs, and your choice can be changed later in the app. You can reset your advertising ID
+     or opt out of personalised ads at any time under <strong>Settings → Privacy → Ads</strong>
+     (the exact path varies by device).</p>
+
   <h3>Information we do not collect</h3>
-  <p>Name, email address, phone number, contacts, call logs, location, advertising identifier, and
-     the content of your photos — <strong>the app collects none of these.</strong> It has no means to.</p>
+  <p>Name, email address, phone number, contacts, call logs, location, and the content of your
+     photos — <strong>the app collects none of these.</strong> It has no means to. In this version
+     the same is true of your advertising ID.</p>
 
   <h3>Deleting photos</h3>
   <p>The app never deletes photos itself. Photos you choose to clean up are moved to the
